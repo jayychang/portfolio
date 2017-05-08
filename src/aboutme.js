@@ -45,7 +45,8 @@ class Description extends Component {
     return (
       <div>
         <h1 className='linedHeader'>Hello I'm Jay</h1>
-        <p>I'm a Software Engineer located in the beautiful Vancouver, British Columbia. I recently graduated from the University of British Columbia with a B.ASc in Computer Engineering. School has taught me a lot. Most importantly, school taught me how to learn. From my time as a student, I gained experiences in both Web and Mobile development. I have worked with PrizmMedia building scalable apps, with FusionPipe prototyping new technologies as well as the University of British Columbia as a Tech Support.</p>
+        <p>I am a Software Engineer located in the beautiful Vancouver, BC. I recently graduated from the University of British Columbia with a B.ASc in Computer Engineering. School has taught me a lot. Most importantly, school taught me how to learn.</p>
+        <p>From my time as a student, I gained valuable experience in both web and mobile development. I have worked with PrizmMedia building scalable apps, with FusionPipe prototyping new technologies as well as the University of British Columbia as a Tech Support.</p>
         <p>As a developer, I love playing around and learning new technologies. To be able to see a product start in its development stages all the way till it comes alive is something I am always very enthusiastic about. Of course, I am more than just a code monkey. I love to eat, play and go hiking. But mostly love eating the most.</p>
       </div>
     )

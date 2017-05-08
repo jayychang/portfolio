@@ -28,9 +28,9 @@ class Skills extends Component {
           <div style={styles}>Skills</div>
           <Grid>
             <Row>
-              <Description title='Full Stack' body='Javascript, React, AngularJS, MongoDB, Node.js, you name it. I have experience creating frontend applications in addition to building backend servers. Infact, this very website you are reading is made using React.' />
-              <Description title='Mobile' body='I have built iOS applications with both Swift and Objective-C in addition to hybrid applications using React Native. Furthermore, I have done user analytics using Fabric and Mixpanel to reduces the number of crashes and improve user retentions.' />
-              <Description title='Development' body='Git, Docker, Zeplin, InVision: I have a wide range of experience with tools that are crutial to the development of a successful product. I put a strong emphasize on proper coding such as scalability and Agile methodologies.' />
+              <Description title='Full Stack' body='Javascript, React, AngularJS, MongoDB, Node.js, RESTful, you name it. I have experience creating frontend applications in addition to building backend servers. In fact, this very website you are reading is made using React.' />
+              <Description title='Mobile' body='I have built iOS applications with both Swift and Objective-C in addition to hybrid applications using React Native. Furthermore, I have done user analytics using Fabric and Mixpanel to reduce the number of crashes and improve user retention.' />
+              <Description title='Development' body='Git, Docker, Zeplin, InVision: I have a wide range of experience with tools that are crucial to the development of a successful product. I put a strong emphasis on proper coding such as scalability and Agile methodologies.' />
             </Row>
           </Grid>
           <div style={padding}/>
