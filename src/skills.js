@@ -4,7 +4,7 @@ import sr from './scrollReveal.js';
 
 class Skills extends Component {
   componentDidMount() {
-    sr.reveal(this.refs.main, {reset: true});
+    sr.reveal(this.refs.main, {reset: true, useDelay: 'onload'});
   }
 
   render() {

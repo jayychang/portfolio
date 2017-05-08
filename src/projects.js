@@ -4,8 +4,7 @@ import sr from './scrollReveal.js';
 
 class Projects extends Component {  
   componentDidMount() {
-    sr.reveal(this.refs.main, {reset: true});
-    sr.reveal(this.refs.header, {reset:true, viewFactor: 0.4})
+    sr.reveal(this.refs.header, {reset:true, viewFactor: 0.4, useDelay: 'onload'})
   }
   render() {
     const styles = 
@@ -14,19 +13,17 @@ class Projects extends Component {
       
     return (
       <section className='Projects'>
-        <div ref='main'>
-          <div className="header" ref='header' style={styles}>Projects</div>
-          <Grid fluid>
-            <Row>
-              <Circle url='https://jayychang.github.io/maidchan/' bg='./assets/discord.jpg' description='Web Application' />
-              <Circle url='https://jayychang.github.io/sipStirred/' bg='./assets/sipnstirred.png' description='Web Application' />
-              <Circle url='https://jayychang.github.io/tournamentBrackets/' bg='./assets/bracket.png' description='Tournament Bracket Generator' />
-              <Circle url='https://github.com/jayychang/CustomLinedTextView' bg='./assets/notes.jpg' description='Objective-C Library' />
-              <Circle url='https://github.com/jayychang/HabitReminder' bg='./assets/calender.jpg' description='Mobile Reminder Application' />
-              <Circle url='https://github.com/jayychang/FirebaseChat' bg='./assets/chat.png' description='Firebase Chatroom' />
-            </Row>
-          </Grid>
-        </div>
+        <div className="header" ref='header' style={styles}>Projects</div>
+        <Grid fluid>
+          <Row>
+            <Circle url='https://jayychang.github.io/maidchan/' bg='./assets/discord.jpg' description='Web Application' />
+            <Circle url='https://jayychang.github.io/sipStirred/' bg='./assets/sipnstirred.png' description='Web Application' />
+            <Circle url='https://jayychang.github.io/tournamentBrackets/' bg='./assets/bracket.png' description='Tournament Bracket Generator' />
+            <Circle url='https://github.com/jayychang/CustomLinedTextView' bg='./assets/notes.jpg' description='Objective-C Library' />
+            <Circle url='https://github.com/jayychang/HabitReminder' bg='./assets/calender.jpg' description='Mobile Reminder Application' />
+            <Circle url='https://github.com/jayychang/FirebaseChat' bg='./assets/chat.png' description='Firebase Chatroom' />
+          </Row>
+        </Grid>
       </section>
     );
   }
@@ -34,7 +31,7 @@ class Projects extends Component {
 
 class Circle extends Component {
   componentDidMount() {
-    sr.reveal(this.refs.circle, {reset: true});
+    sr.reveal(this.refs.circle, {reset: true, useDelay: 'onload'});
   }
 
   render() {
