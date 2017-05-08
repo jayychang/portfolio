@@ -115,6 +115,13 @@
   justify-content: center;
   text-align: center;  
 }
+.logoWrapper {
+  z-index: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align:center;
+  width: 70%;
+}
 .circleWrapper:hover .circleBgWrapper {
   -webkit-filter: blur(2px);
   filter: blur(2px);
