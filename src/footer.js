@@ -5,17 +5,18 @@ class Footer extends Component {
   render() {
   	const styles = 
   	{
-      'background-color': '#001933',
       'height': '140px'
     }
 
     return (
       <section className='Footer' style={styles}>
         <Grid>
-          <Row className='center'>
+          <Row>
+          <Col xs={3} />
           <Icon url='https://github.com/jayychang' icon='./assets/githublogo.png' />
           <Icon url='https://www.linkedin.com/in/jaychanggg/' icon='./assets/linkedinlogo.png' />
           <Icon url='mailto:jaychanggg@gmail.com' icon='./assets/emaillogo.png' />
+          <Col xs={3} />
           </Row>
         </Grid>
       </section>

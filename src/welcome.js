@@ -6,7 +6,7 @@ class Welcome extends Component {
     init(this.refs.typed, {
       strings:['Jay Chang :)', 'Software Engineer', 'Full Stack Developer', 'Web and Mobile', 'Scroll for more...'],
       startDelay: 300,
-      backDelay: 1500,
+      backDelay: 1200,
       loop: true
     });
   }
@@ -18,12 +18,11 @@ class Welcome extends Component {
         'display':'flex',
         'align-items': 'center',
         'justify-content': 'center',
-        'background-color': 'white'
       }
 
     return (
       <section className='Welcome' style={styles}>
-       <span className='typed' ref='typed' />
+        <span className='typed' ref='typed' />
       </section>
     );
   }

@@ -1,6 +1,6 @@
 {
-  "name": "jay-site",
-  "version": "0.1.0",
+  "name": "jay-portfolio",
+  "version": "1.0",
   "homepage": "https://jayychang.github.io/portfolio/",
   "dependencies": {
     "ityped": "0.0.10",

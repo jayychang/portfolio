@@ -16,10 +16,12 @@ class Skills extends Component {
         'justify-content': 'center',
         'font-size': '3em',
   	  }
+
     const padding =
       {
         'margin-bottom': '40px',
       }
+
     return (
       <section className='Skills'>
         <div ref='main'>
@@ -44,6 +46,7 @@ class Description extends Component {
   	  {
   	  	'text-align': 'center'
   	  }
+      
     return (
       <Col sm={4}>
         <h2 style={styles} className='linedHeader'>{this.props.title}</h2>
