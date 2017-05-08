@@ -16,7 +16,7 @@ class Projects extends Component {
         <div className="header" ref='header' style={styles}>Projects</div>
         <Grid fluid>
           <Row>
-            <Circle url='https://jayychang.github.io/maidchan/' bg='./assets/discord.jpg' description='Web Application' />
+            <Circle url='https://github.com/jayychang/maid-chan/' bg='./assets/discord.jpg' description='Discord Chat Bot' />
             <Circle url='https://jayychang.github.io/sipStirred/' bg='./assets/sipnstirred.png' description='Web Application' />
             <Circle url='https://jayychang.github.io/tournamentBrackets/' bg='./assets/bracket.png' description='Tournament Bracket Generator' />
             <Circle url='https://github.com/jayychang/CustomLinedTextView' bg='./assets/notes.jpg' description='Objective-C Library' />
@@ -30,6 +30,10 @@ class Projects extends Component {
 }
 
 class Circle extends Component {
+  openNew(url) {
+    window.open(url);
+  }
+
   componentDidMount() {
     sr.reveal(this.refs.circle, {reset: true, useDelay: 'onload'});
   }
@@ -38,12 +42,10 @@ class Circle extends Component {
     return (
       <Col className='noPad' xs={12} sm={6} md={4}>
         <div className='circleWrapper' ref='circle'>
-          <a href={this.props.url}>
-           <img className='circleBgWrapper' src={require(this.props.bg)}/>
-           <div className='circleContentWrapper'>
-             <h2>{this.props.description}</h2>
-           </div>
-          </a>
+          <img className='circleBgWrapper' src={require(this.props.bg)} />
+          <div className='circleContentWrapper clickable' onClick={() => this.openNew(this.props.url)}>
+            <h2>{this.props.description}</h2>
+          </div>
         </div>
       </Col>
     );

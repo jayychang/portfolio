@@ -45,7 +45,7 @@ class Description extends Component {
   	  	'text-align': 'center'
   	  }
     return (
-      <Col xs={4}>
+      <Col sm={4}>
         <h2 style={styles} className='linedHeader'>{this.props.title}</h2>
         <p>{this.props.body}</p>
       </Col>
