@@ -22,7 +22,7 @@ class Welcome extends Component {
 
     return (
       <section className='Welcome' style={styles}>
-        <span className='typed' ref='typed' />
+        <div><span className='typed' ref='typed' /></div>
       </section>
     );
   }

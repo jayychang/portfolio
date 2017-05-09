@@ -10,7 +10,8 @@ class Skills extends Component {
   render() {
   	const styles =
   	  {
-        'height': '200px',
+        'height': '180px',
+        'margin-bottom': '10',
         'display':'flex',
         'align-items': 'center',
         'justify-content': 'center',
@@ -19,7 +20,7 @@ class Skills extends Component {
 
     const padding =
       {
-        'margin-bottom': '40px',
+        'margin-bottom': '60px',
       }
 
     return (

@@ -32,8 +32,8 @@ class Content extends Component {
     return (
       <Grid>
         <Row>
-          <Col sm={8}><Description /></Col>
-          <Col sm={4}><Gif /></Col>
+          <Col md={8} mdOffset={0} smOffset={1} sm={10}><Description /></Col>
+          <Col md={4} mdOffset={0} smOffset={3} sm={6}><Photo /></Col>
         </Row>
       </Grid>
     )
@@ -53,10 +53,11 @@ class Description extends Component {
   }
 }
 
-class Gif extends Component {
+class Photo extends Component {
+  // http://toonator.com/preview/cx2nbwkrthe2
   render() {
     return (
-        <img className='img-responsive center-block' src="http://toonator.com/preview/cx2nbwkrthe2" width="90%" />
+        <img className='img-responsive center-block myPhoto' src={require('./assets/myPhoto.png')} height="50%" />
     )
   }
 }

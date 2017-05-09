@@ -138,6 +138,11 @@
   border-bottom: 1px solid #EFEFEF
 }
 
+.myPhoto {
+  border-radius: 10%;
+  padding: 20px;
+}
+
 .footer {
   color: white;
 }
