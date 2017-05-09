@@ -26,7 +26,7 @@ class Skills extends Component {
     return (
       <section className='Skills'>
         <div ref='main'>
-          <div style={styles}>Skills</div>
+          <div style={padding} />
           <Grid>
             <Row>
               <Description title='Full Stack' body='Javascript, React, AngularJS, MongoDB, Node.js, RESTful, you name it. I have experience creating frontend applications in addition to building backend servers. In fact, this very website you are reading is made using React.' />

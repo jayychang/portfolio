@@ -13,13 +13,13 @@ class Projects extends Component {
       
     return (
       <section className='Projects'>
-        <div className="header" ref='header' style={styles}>Projects</div>
+        <div className="header" ref='header' style={styles}>Personal Projects</div>
         <Grid fluid>
           <Row>
             <Circle url='https://github.com/jayychang/maid-chan/' bg='./assets/discord.jpg' description='Discord Chat Bot' />
             <Circle url='https://jayychang.github.io/sipStirred/' bg='./assets/sipnstirred.png' description='Web Application' />
             <Circle url='https://jayychang.github.io/tournamentBrackets/' bg='./assets/bracket.png' description='Tournament Bracket Generator' />
-            <Circle url='https://github.com/jayychang/CustomLinedTextView' bg='./assets/notes.jpg' description='Objective-C Library' />
+            <Circle url='https://github.com/jayychang/CustomLinedTextView' bg='./assets/notes.jpg' description='Lined TextView      Objective-C Library' />
             <Circle url='https://github.com/jayychang/HabitReminder' bg='./assets/calender.jpg' description='Mobile Reminder Application' />
             <Circle url='https://github.com/jayychang/FirebaseChat' bg='./assets/chat.png' description='Firebase Chatroom' />
           </Row>
@@ -37,14 +37,19 @@ class Circle extends Component {
   componentDidMount() {
     sr.reveal(this.refs.circle, {reset: true, useDelay: 'onload'});
   }
-
+ 
   render() {
+    const width =
+    {
+      'width':'80%'
+    }
+
     return (
       <Col className='noPad' xs={12} sm={6} md={4}>
         <div className='circleWrapper' ref='circle'>
           <img className='circleBgWrapper' src={require(this.props.bg)} />
           <div className='circleContentWrapper clickable' onClick={() => this.openNew(this.props.url)}>
-            <h2>{this.props.description}</h2>
+            <h3 style={width}>{this.props.description}</h3>
           </div>
         </div>
       </Col>

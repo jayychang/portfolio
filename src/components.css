@@ -120,7 +120,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   text-align:center;
-  width: 70%;
+  width: 80%;
 }
 .circleWrapper:hover .circleBgWrapper {
   -webkit-filter: blur(2px);
